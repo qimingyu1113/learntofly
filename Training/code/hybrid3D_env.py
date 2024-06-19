@@ -307,7 +307,7 @@ class Hybrid3DEnv(gym.Env):
         alive_bonus = 400.0
 
         # 设置固定方向
-        desired_direction = np.array([1.0, 0.0, 0.0])  # 例如，这里设置为朝向x轴正方向
+        desired_direction = np.array([0.0, 1.0, 0.0])  # 例如，这里设置为朝向x轴正方向
 
         vel_local = self.calc_local_velocity(self.rigid_body.rpy[2], self.rigid_body.velocity)
 
